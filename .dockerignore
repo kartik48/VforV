@@ -1,0 +1,6 @@
+.git
+.DS_Store
+*.md
+fly.toml
+Dockerfile
+.dockerignore
