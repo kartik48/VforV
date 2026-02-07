@@ -1,14 +1,14 @@
 // Photo data - timeline photos
 const photos = [
-    { src: 'Pictures/T1.HEIC', caption: 'The beginning of something beautiful' },
-    { src: 'Pictures/T2.HEIC', caption: 'Every moment with you is a treasure' },
-    { src: 'Pictures/T3.HEIC', caption: 'You make my heart smile' },
-    { src: 'Pictures/T4_1.HEIC', caption: 'So many memories, so much happiness' },
-    { src: 'Pictures/T4_2.HEIC', caption: 'So many memories, so much happiness' },
-    { src: 'Pictures/T4_3.HEIC', caption: 'So many memories, so much happiness' },
-    { src: 'Pictures/T4_4.HEIC', caption: 'So many memories, so much happiness' },
-    { src: 'Pictures/T5.jpg', caption: 'With you, every day is an adventure' },
-    { src: 'Pictures/T6.HEIC', caption: 'Here\'s to many more moments together' }
+    { src: 'Pictures/T1.jpg', caption: 'K fall for Momo' },
+    { src: 'Pictures/T2.jpg', caption: 'Drunk K fall even harder' },
+    { src: 'Pictures/T3.jpg', caption: 'K Momo already look good together' },
+    { src: 'Pictures/T4_1.jpg', caption: '....' },
+    { src: 'Pictures/T4_2.jpg', caption: '....' },
+    { src: 'Pictures/T4_3.jpg', caption: '....' },
+    { src: 'Pictures/T4_4.jpg', caption: '....' },
+    { src: 'Pictures/T5.jpg', caption: 'K actual fav pic of K and Momo' },
+    { src: 'Pictures/T6.jpg', caption: 'Momo K cutu' }
 ];
 
 let currentPhotoIndex = 0;
