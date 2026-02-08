@@ -9,6 +9,9 @@ COPY Pictures /usr/share/nginx/html/Pictures
 # Copy nginx configuration
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
+# Fix permissions for nginx to read files
+RUN chmod -R 755 /usr/share/nginx/html
+
 EXPOSE 8080
 
 CMD ["nginx", "-g", "daemon off;"]
