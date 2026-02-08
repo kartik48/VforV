@@ -4,6 +4,7 @@ FROM nginx:alpine
 COPY index.html /usr/share/nginx/html/
 COPY styles.css /usr/share/nginx/html/
 COPY script.js /usr/share/nginx/html/
+COPY romantic-music.mp3 /usr/share/nginx/html/
 COPY Pictures /usr/share/nginx/html/Pictures
 
 # Copy nginx configuration
