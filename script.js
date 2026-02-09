@@ -7,7 +7,7 @@ const photos = [
     { src: 'Pictures/T4_2.jpg', caption: '....' },
     { src: 'Pictures/T4_3.jpg', caption: '....' },
     { src: 'Pictures/T4_4.jpg', caption: '....' },
-    { src: 'Pictures/T5.jpg', caption: 'K actual fav pic of K and Momo' },
+    { src: 'Pictures/T5.JPG', caption: 'K actual fav pic of K and Momo' },
     { src: 'Pictures/T6.jpg', caption: 'Momo K cutu' }
 ];
 
