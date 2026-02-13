@@ -145,6 +145,8 @@ function showIntermediateMessage() {
 }
 
 // Countdown Timer
+let countdownReachedZero = false;
+
 function updateCountdown() {
     const valentine = new Date('2026-02-14T00:00:00').getTime();
     const now = new Date().getTime();
@@ -155,6 +157,12 @@ function updateCountdown() {
         document.getElementById('hours').textContent = '00';
         document.getElementById('minutes').textContent = '00';
         document.getElementById('seconds').textContent = '00';
+
+        // Trigger special effect when countdown reaches zero (only once)
+        if (!countdownReachedZero) {
+            countdownReachedZero = true;
+            onCountdownComplete();
+        }
         return;
     }
 
@@ -167,6 +175,18 @@ function updateCountdown() {
     document.getElementById('hours').textContent = String(hours).padStart(2, '0');
     document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
     document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+}
+
+// Special effect when countdown completes
+function onCountdownComplete() {
+    const questionText = document.querySelector('.big-question');
+    const questionSection = document.getElementById('section3');
+
+    // Change the question text
+    questionText.textContent = "It's Valentine's Day! 💜 Will you be mine?";
+
+    // Add gentle pulse animation
+    questionSection.classList.add('countdown-complete');
 }
 
 // Update countdown every second
